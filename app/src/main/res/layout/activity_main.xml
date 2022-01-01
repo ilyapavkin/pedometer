@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -18,7 +18,7 @@
             android:id="@+id/textView_Info"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Steps" />
+            android:text="Шаги" />
 
         <TextView
             android:id="@+id/textView_Steps"
@@ -26,9 +26,17 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="0"
-            android:textSize="40sp"/>
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView_StepsOf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="из 8000" />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -41,12 +49,12 @@
             android:id="@+id/custom_progressBar"
             android:layout_width="@dimen/progressBar_dimen"
             android:layout_height="@dimen/progressBar_dimen"
-            app:min="0"
+            android:longClickable="true"
             app:max="8000"
+            app:min="0"
             app:progress="0"
-            app:progressBarThickness="4dp"
 
-            />
+            app:progressBarThickness="4dp" />
 
     </LinearLayout>
 </FrameLayout>
